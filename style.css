@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  background: linear-gradient(0deg, rgba(0,141,143,1) 9%, rgba(148,101,0,1) 100%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.knop {
+  display: flex; /* Используем flexbox для кнопок */
+  justify-content: center; /* Центрируем кнопки по горизонтали */
+  gap: 5px; /* Устанавливаем расстояние между кнопками */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.btn, .active, .tasks, .store {
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  cursor: pointer;
+  font-size: 0.550em;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-color: #527c82;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #527c82 inset, 0 0 0 0 #527c82;
+  transition: all 150ms ease-in-out;
+}
+
+.btn:hover, .active:hover, .tasks:hover, .store:hover {
+  color: #527c82;
+  box-shadow: 0 0 10px 0 #527c82 inset, 0 0 10px 4px #527c82;
+}
+
+.btn:focus, .active:focus, .tasks:focus, .store:focus {
+  outline: none;
+}
